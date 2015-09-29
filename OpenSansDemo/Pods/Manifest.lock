@@ -1,0 +1,17 @@
+PODS:
+  - Expecta (1.0.3)
+  - OpenSans (1.0.3)
+
+DEPENDENCIES:
+  - Expecta
+  - OpenSans (from `../`)
+
+EXTERNAL SOURCES:
+  OpenSans:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  OpenSans: 33078846463eae780aa5f82986b51cce085f970d
+
+COCOAPODS: 0.38.2

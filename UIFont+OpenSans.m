@@ -30,7 +30,7 @@
             CFStringRef errorDescription = CFErrorCopyDescription(error);
             @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:(__bridge NSString *)errorDescription userInfo:@{ NSUnderlyingErrorKey: (__bridge NSError *)error }];
         }
-        
+
         CFRelease(font);
     }
 
@@ -64,14 +64,29 @@
     return [self kosLoadAndReturnFont:@"OpenSans-Light" size:size onceToken:&onceToken fontFileName:@"OpenSans-Light"];
 }
 
++ (instancetype)openSansCondensedLightFontOfSize:(CGFloat)size {
+    // static dispatch_once_t onceToken;
+    return [self kosLoadAndReturnFont:@"OpenSans-CondLight" size:size onceToken:&onceToken fontFileName:@"OpenSans-CondLight"];
+}
+
 + (instancetype)openSansLightItalicFontOfSize:(CGFloat)size {
     static dispatch_once_t onceToken;
     return [self kosLoadAndReturnFont:@"OpenSansLight-Italic" size:size onceToken:&onceToken fontFileName:@"OpenSans-LightItalic"];
 }
 
++ (instancetype)openSansCondensedLightItalicFontOfSize:(CGFloat)size {
+    static dispatch_once_t onceToken;
+    return [self kosLoadAndReturnFont:@"OpenSans-CondLightItalic" size:size onceToken:&onceToken fontFileName:@"OpenSans-CondLightItalic"];
+}
+
 + (instancetype)openSansBoldFontOfSize:(CGFloat)size {
     static dispatch_once_t onceToken;
     return [self kosLoadAndReturnFont:@"OpenSans-Bold" size:size onceToken:&onceToken fontFileName:@"OpenSans-Bold"];
+}
+
++ (instancetype)openSansCondensedBoldFontOfSize:(CGFloat)size {
+    static dispatch_once_t onceToken;
+    return [self kosLoadAndReturnFont:@"OpenSans-CondBold" size:size onceToken:&onceToken fontFileName:@"OpenSans-CondBold"];
 }
 
 + (instancetype)openSansBoldItalicFontOfSize:(CGFloat)size {

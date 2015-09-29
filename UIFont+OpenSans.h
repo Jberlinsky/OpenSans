@@ -28,17 +28,35 @@
 */
 + (instancetype)openSansLightFontOfSize:(CGFloat)size;
 
+/** Returns a font object for the Open Condensed Sans Light font which has the specified size instead.
+ @param size The desired size (in points) of the new font object. This value must be greater than 0.0
+ @return A font object of the specified size.
+*/
++ (instancetype)openSansCondensedLightFontOfSize:(CGFloat)size;
+
 /** Returns a font object for the Open Sans Light Italic font which has the specified size instead.
  @param size The desired size (in points) of the new font object. This value must be greater than 0.0
  @return A font object of the specified size.
 */
 + (instancetype)openSansLightItalicFontOfSize:(CGFloat)size;
 
+/** Returns a font object for the Open Sans Condensed Light Italic font which has the specified size instead.
+ @param size The desired size (in points) of the new font object. This value must be greater than 0.0
+ @return A font object of the specified size.
+*/
++ (instancetype)openSansCondensedLightItalicFontOfSize:(CGFloat)size;
+
 /** Returns a font object for the Open Sans bold font which has the specified size instead.
  @param size The desired size (in points) of the new font object. This value must be greater than 0.0
  @return A font object of the specified size.
 */
 + (instancetype)openSansBoldFontOfSize:(CGFloat)size;
+
+/** Returns a font object for the Open Sans Condensed Bold font which has the specified size instead.
+ @param size The desired size (in points) of the new font object. This value must be greater than 0.0
+ @return A font object of the specified size.
+*/
++ (instancetype)openSansCondensedBoldFontOfSize:(CGFloat)size;
 
 /** Returns a font object for the Open Sans Bold Italic font which has the specified size instead.
  @param size The desired size (in points) of the new font object. This value must be greater than 0.0

@@ -26,6 +26,10 @@
 @property (nonatomic, weak) IBOutlet UILabel *openSansExtraBoldLabel;
 @property (nonatomic, weak) IBOutlet UILabel *openSansExtraBoldItalicLabel;
 
+@property (nonatomic, weak) IBOutlet UILabel *openSansCondensedLightLabel;
+@property (nonatomic, weak) IBOutlet UILabel *openSansCondensedLightItalicLabel;
+@property (nonatomic, weak) IBOutlet UILabel *openSansCondensedBoldLabel;
+
 @end
 
 @implementation OpenSansViewController
@@ -43,6 +47,9 @@
     self.openSansSemiBoldItalicLabel.font = [UIFont openSansSemiBoldItalicFontOfSize:18.0f];
     self.openSansExtraBoldLabel.font = [UIFont openSansExtraBoldFontOfSize:18.0f];
     self.openSansExtraBoldItalicLabel.font = [UIFont openSansExtraBoldItalicFontOfSize:18.0f];
+
+    self.openSansCondensedLightLabel.font = [UIFont openSansCondensedLightFontOfSize:18.0f];
+    self.openSansCondensedLightItalicLabel.font = [UIFont openSansCondensedLightItalicFontOfSize:18.0f];
 }
 
 @end
